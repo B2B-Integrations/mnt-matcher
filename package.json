@@ -1,7 +1,7 @@
 {
-  "name": "fm-indexer",
-  "version": "1.0.0",
-  "description": "FM-Index implementation",
+  "name": "@semanticlabs/fm-indexer",
+  "version": "0.8.0",
+  "description": "FM-Index NLP indexing and searching library for JavaScript/Node.js",
   "type": "module",
   "main": "src/fmIndex.mjs",
   "exports": {
