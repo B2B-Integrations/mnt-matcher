@@ -1,0 +1,255 @@
+[
+    {
+        "prompt": "what is a cat?",
+        "expected_keywords": [
+            "cat", "animal",  "pet", "mammal", "tiger"
+        ],
+        "flags": []
+    },
+
+    {
+        "prompt": "what is a boaat?",
+        "expected_keywords": [
+            "boat", "vehicle" 
+        ],
+        "flags": []
+    },
+
+    {
+        "prompt": "what comes after monday?",
+        "expected_keywords": [
+            "tuesday" 
+        ],
+        "flags": []
+    },
+    
+    
+    {
+        "prompt": "what comes after may?",
+        "expected_keywords": [
+            "june" 
+        ],
+        "flags": []
+    },  
+
+    {
+        "prompt": "some animals",
+        "expected_keywords_pick_two": [
+            "rodent",  "horse",  "elephant",  "rodent",  "wolf",  "wolf",  "goat",  "snake",  "frog",  "chimpanzee",  "shark",  "marsupial",
+            "sheep",  "lion",  "dolphin",  "frog",  "elephant",  "lion",  "butterfly",  "pigeon",  "lion",  "sparrow",  "crow",  "fish",
+            "lobster",  "turtle",  "whale",  "bear",  "spider",  "horse",  "squid",  "pigeon",  "feline",  "reptile",  "elephant",  "fish",
+            "parrot",  "tiger",  "bird",  "reptile",  "cat",  "elk",  "spider",
+            "cow", "deer"
+        ],
+        "flags": []
+    },
+
+    {
+        "prompt": "in what country is ryadh? ",
+        "expected_keywords": [
+            "saudi", "arabia", "riyadh" 
+        ],
+        "flags": []
+    },
+
+    {
+        "prompt": "show me a cow",
+        "expected_keywords": [
+            "🐄"
+        ],
+        "flags": []
+    },
+
+    {
+        "prompt": "how many legs does a cow have ?",
+        "expected_keywords_pick_one": [
+            "4", "four"
+        ],
+        "flags": []
+    },
+
+    {
+        "prompt": "Let's say all cats are mammals. Let's say Fluffy is a cat. Now is Fluffy a mammal?",
+        "expected_positive": true,
+        "positive_additional_phrases": ["is a mammal", "as a mammal"],
+        "flags": []
+    },
+
+    {
+        "todo": true,
+        "prompt": "Let's say all fish are wet. Let's say Nemo is a fish. Now is Nemo wet?",
+        "expected_positive": true,
+        "positive_additional_phrases": ["is wet"],
+        "flags": []
+    },
+
+    //todo add explicit test "be explicit"
+    {
+        "prompt": "Does a bird have wings?",
+        "expected_positive": true,
+        "positive_additional_phrases": ["has wings", "have wings"],
+        "flags": []
+        
+    },
+    {
+        "prompt": "Does a car have wheels?",
+        "expected_positive": true,
+        "positive_additional_phrases": ["has wheels", "have wheels"],
+        "flags": []
+        
+    },
+    {
+        "todo": true,
+        "implementation_note": "talks about dive, not live",
+        "prompt": "Does earth have live?",
+        "expected_positive": true,
+        "positive_additional_phrases": ["has wheels", "have wheels"],
+        "flags": []
+        
+    },       
+
+    {
+        "prompt": "what is a dog?",
+        "expected_keywords": [
+            "dog", "animal",  "pet", "mammal"
+        ],
+        "flags": []
+    },
+
+    {
+        "implementation_note": "has stripes has lower confidence then is an animal, increased confidence but feels like hack",
+        "prompt": "what is a zebra?",
+        "expected_keywords": [
+            "zebra", "animal", "stripes"
+        ],
+        "flags": []
+    },
+   
+
+    {
+        "prompt": "who is napoleon?",
+        "expected_keywords": [
+            "napoleon"
+        ],
+        "expected_keywords_pick_one": [
+            "bonaparte", "french", "emperor", "military", "leader", "bonaparte", "history"
+        ],
+        "flags": []
+    },
+
+    //what is the difference between a cat and a dog? 
+    {
+        "todo": true,
+        "implementation_note": "returns nothing yet",
+        "prompt": "what is the difference between a cat and a dog?",
+        "expected_keywords": [
+            "cat", "dog",  "difference", "cats", "dogs", "independent", "loyal", "meow", "bark", "feline", "canine"
+        ],
+        "flags": []
+    },
+    //is a cow an animal?
+    {
+        "todo": true,
+        "implementation_note": "shouöd return true, data issue maybe?",
+        "prompt": "is a cow an animal?",
+        "expected_positive": true,
+        "positive_additional_phrases": ["is an animal", "is a animal"],
+        "flags": []
+    },
+    //what color is the sky?
+    {
+        "prompt": "what color is the sky?",
+        "expected_keywords_pick_one": [
+            "blue", "gray", "grey", "orange", "pink", "red"
+        ],
+        "flags": []
+    },
+    //what animal is a cat?
+    {
+        "todo": true,
+        "implementation_note": "correct execution, but returns mammal from 'cat' and from 'a cat', so duplication issue?",
+        "prompt": "what animal is a cat?",
+        "expected_keywords": [
+            "cat", "animal",  "feline", "mammal", "pet"
+        ],
+        "flags": []
+    },
+    //what is a computer?
+    {
+        "prompt": "what is a computer?",
+        "expected_keywords_pick_one": [
+            "electronic", "device", "machine", "technology", "laptop", "desktop"
+        ],        
+        "expected_keywords": [
+            "computer"
+        ],
+        "flags": []
+    },
+    //who is pink panther?
+    {
+        "prompt": "who is madonna?",
+        "expected_keywords_pick_one": [
+            "singer", "person", "michigan" 
+        ],        
+        "expected_keywords": [
+            "madonna"
+        ],
+        "flags": []
+    },
+
+   {
+        "todo": true,
+        "implementation_note": "does not know, but could deduce from black and board",
+        "prompt": "what color is a blackboard?",
+        "expected_keywords": [
+            "zebra", "turtle"
+        ],
+        "flags": []
+    },
+
+    {
+        
+        "todo": true,
+        "implementation_note": "returns too many items",
+        "prompt": "list me some singers",
+        "expected_not_negative": true,
+        "expected_not_nodata": true,
+        "expected_not_empty": true,
+        "expected_less_than_many": true,
+        "flags": []
+    },
+    
+    {
+        
+        "prompt": "list me some colors",
+        "expected_not_negative": true,
+        "expected_not_nodata": true,
+        "expected_not_empty": true,
+        "expected_less_than_many": true,
+        "flags": []
+    } ,
+
+    {
+        "prompt": "what is fun todo?",
+        "expected_keywords_pick_one": [
+            "fun", "snow", "sun", "toy"
+        ],
+        "expected_not_negative": true,
+        "expected_not_empty": true,
+        "expected_less_than_many": true      
+    },
+    {
+        "prompt": "what is bording todo?",
+        "implementation_note": "typo for, should find boring since it more common word",
+        "expected_keywords_pick_one": [
+            "boring", "slow", "waiting"
+        ],
+        "expected_not_negative": true,
+        "expected_not_empty": true,
+        "expected_less_than_many": true      
+    }    
+
+
+
+    //failed: who is pink panther?
+]

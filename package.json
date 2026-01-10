@@ -1,0 +1,20 @@
+{
+  "name": "fm-indexer",
+  "version": "1.0.0",
+  "description": "FM-Index implementation",
+  "type": "module",
+  "main": "src/fmIndex.mjs",
+  "exports": {
+    ".": "./src/fmIndex.mjs"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "fm-index",
+    "indexing",
+    "search"
+  ],
+  "author": "Dusty Wilhelm Murray / Semantic Labs AB",
+  "license": "MIT"
+}
