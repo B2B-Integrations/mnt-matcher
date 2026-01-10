@@ -9,14 +9,14 @@ Example:
 import * as fmIndex from '../src/fmIndex.mjs';
 
 fmIndex.setPenalies( 
-    {
-        "lengthDifferenceFactor": 1.0,
-        "spaceCountFactor": 0.2
-    }
- );
-
-//create index
-let index = fmIndex.construct( fmIndex.L_DEFAULT );
+    { 
+        "lengthDifferenceFactor": 1.0, 
+        "spaceCountFactor": 0.2 
+    } 
+ ); 
+ 
+//create index 
+let index = fmIndex.construct( fmIndex.L_DEFAULT ); 
 
 //Read your dictionary, add to your index
 for( let i=0; i<dictionary.length; i++ ) {
