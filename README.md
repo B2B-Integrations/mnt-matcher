@@ -37,7 +37,8 @@ console.log(JSON.stringify(results));
 
 # Installation Demo files
 ```bash
-git clone https://github.com/B2B-Integrations/mnt-demo
+git clone https://github.com/SemanticTools/mnt-demo.git
+npm install
 ```
 
 Run the interactive demo:
