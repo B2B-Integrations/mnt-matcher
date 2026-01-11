@@ -1,5 +1,5 @@
 const useWip = process.argv.includes('--wip');
-const srcPath = useWip ? '../src-wip/fmIndex.mjs' : '../src/fmIndex.mjs';
+const srcPath = useWip ? '../src-wip/mntMatch.mjs' : '../src/mntMatch.mjs';
 const fmIndex = await import(srcPath);
 
 let fs = await import('fs/promises');
